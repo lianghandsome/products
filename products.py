@@ -14,3 +14,8 @@ print(products)
 
 for i in products:
     print(i[0],'的價格是:',i[1])
+
+#寫入檔案(沒有檔案，就會寫一個全新的)
+with open('products.csv', 'w') as f:
+    for i in products:
+        f.write(i[0] + ',' + i[1] + '\n')
