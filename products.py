@@ -9,6 +9,8 @@ while True:
     #p.append(price)
     
     #p = [name, price]
-    
     products.append([name, price])
-print(products[0][0])
+print(products)
+
+for i in products:
+    print(i[0],'的價格是:',i[1])
